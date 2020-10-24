@@ -1,0 +1,73 @@
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 48px;
+  width: 100%;
+}
+
+.menu__section {
+  display: flex;
+  align-items: center;
+}
+
+.menu__section.left {
+  padding: 12px 16px; /* Eixo Y, Eixo X */
+}
+
+.menu__icon {
+  padding-right: clamp(1px, 3vw, 22px); /* value = (min, val, max) */
+}
+
+.menu__link {
+  text-transform: uppercase; /* Tudo maiusculo */
+  font-size: 12px;
+  font-weight: 600;
+  color: #757575;
+  padding: 12px clamp(1px, 3vw, 22px);
+}
+
+.menu__link.active {
+  color: #4285f4;
+  border-bottom: 2px solid #4285f4;
+}
+
+.menu__link:not(.active) {
+  /* Apenas para linhamento entres div's */
+  border-bottom: 2px solid none;
+}
+
+.menu__section.right {
+  margin-right: 4px;
+}
+
+.menu__section.right .menu__icon {
+  padding: 12px;
+  padding-right: clamp(1px, 3vw, 22px);
+}
+
+.menu__profile {
+  padding: 4px;
+  max-width: 40px;
+  max-height: 40px;
+  width: auto;
+  height: auto;
+  position: relative;
+}
+
+.menu__avatar {
+  width: 32px;
+  height: 32px;
+  max-width: auto;
+  max-height: auto;
+  border-radius: 50%;
+}
+
+.menu__avatar--frame {
+  position: absolute;
+  /* Fixa no primeiro 'pai' diferente de estático, no caso .menu__profile*/
+
+  top: 0;
+  left: 0;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!-- comando -> html:5 -->
+
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+    <title>Google UI | Clone</title>
+
+    <link rel="stylesheet" href="../public/css/main.css" />
+    <link rel="stylesheet" href="../public/css/header.css" />
+    <link rel="stylesheet" href="../public/css/footer.css" />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      *,
+      input,
+      button {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      html, body{
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="menu">
+      <div class="menu__section left">
+        <img
+          class="menu__icon"
+          src="../public/images/burger-icon.svg"
+          alt="burguer"
+        />
+        <a class="menu__link active">All</a>
+        <a class="menu__link">Images</a>
+      </div>
+      <div class="menu__section right">
+        <img
+          class="menu__icon"
+          src="../public/images//more-icon.svg"
+          alt="More"
+        />
+        <div class="menu__profile">
+          <img
+            class="menu__avatar"
+            src="../public/images//Foto-perfil.jpg"
+            alt="Avatar"
+          />
+
+          <img
+            class="menu__avatar--frame"
+            src="../public/images//circle-frame.svg"
+            alt="Frame"
+          />
+        </div>
+      </div>
+    </header>
+
+    <main class="content">
+      <img
+        class="content__logo"
+        src="../public/images/logo.svg"
+        alt="logo_UI"
+      />
+      <input class="content__search" type="text" />
+
+      <div class="content__offer">
+        Daniel Oliveira -
+        <a id="github__link" href="https://github.com/danielsouza21"
+          >danielsz21</a
+        >
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__section location">
+        <span>Brazil</span>
+      </div>
+      <div class="footer__section links">
+        <a>Settings</a>
+        <a>Privacy</a>
+        <a>Terms</a>
+      </div>
+    </footer>
+  </body>
+</html>

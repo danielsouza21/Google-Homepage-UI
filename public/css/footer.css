@@ -1,0 +1,31 @@
+.footer {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  background: #f2f2f2;
+}
+
+.footer__section:not(:first-child) {
+  /* Aplica a todos menos primeiro filho da lista */
+  border-top: 3px solid #e4e4e4;
+}
+
+.footer__section.location {
+  font-size: 16px;
+  color: #5f6368;
+  padding: 10px 12px;
+}
+
+.footer__section.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #5f6368;
+  font-size: 13px;
+  padding: 10px;
+}
+
+.footer__section.links a {
+  padding: 0 12px;
+}
