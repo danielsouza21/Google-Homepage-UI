@@ -1,7 +1,7 @@
 # User Interface Clone - Google Homepage
 
 <h4 align="center">
-    <img alt="PrintProject" title="PrintProject" src="./Captura de tela.png" width="50px" />
+    <img alt="PrintProject" title="PrintProject" src="./Captura de tela.png" width="600px" />
 </h4>
 
 ## Technologies
